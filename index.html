@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sydney Schulz | Personal Website</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -20,44 +24,68 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
-        nav {
+
+        /* -------------------------
+           NAVIGATION
+        ------------------------- */
+
+        .navbar {
             background-color: white;
             padding: 20px 10%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+            width: 100%;
         }
 
-        nav h2 {
+        .nav-name a {
             font-size: 22px;
+            font-weight: bold;
             color: #333;
+            text-decoration: none;
         }
 
-        nav ul {
+        .nav-links {
             list-style: none;
+
             display: flex;
-            gap: 30px;
+            flex-direction: row;
+
+            gap: 35px;
         }
 
-        nav a {
+        .nav-links a {
             text-decoration: none;
             color: #333;
+
+            font-size: 16px;
             font-weight: 500;
+
+            transition: 0.3s;
         }
 
-        nav a:hover {
+        .nav-links a:hover {
             color: #8b6f5a;
         }
 
-        /* Main Hero Section */
+
+        /* -------------------------
+           HOME/HERO SECTION
+        ------------------------- */
+
         .hero {
-            min-height: 80vh;
+            min-height: 75vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             text-align: center;
+
             padding: 50px 20px;
         }
 
@@ -81,15 +109,24 @@
             margin-bottom: 30px;
         }
 
-        /* Button */
+
+        /* -------------------------
+           BUTTON
+        ------------------------- */
+
         .button {
             display: inline-block;
+
             background-color: #8b6f5a;
             color: white;
+
             padding: 13px 28px;
+
             border-radius: 6px;
+
             text-decoration: none;
             font-weight: bold;
+
             transition: 0.3s;
         }
 
@@ -97,10 +134,16 @@
             background-color: #6f5747;
         }
 
-        /* About Section */
+
+        /* -------------------------
+           ABOUT PREVIEW
+        ------------------------- */
+
         .about {
             background-color: white;
+
             padding: 70px 10%;
+
             text-align: center;
         }
 
@@ -111,28 +154,45 @@
 
         .about p {
             max-width: 750px;
+
             margin: auto;
+
             color: #666;
+
             font-size: 17px;
         }
 
-        /* Footer */
+
+        /* -------------------------
+           FOOTER
+        ------------------------- */
+
         footer {
             text-align: center;
+
             padding: 25px;
+
             color: #777;
+
             font-size: 14px;
         }
 
-        /* Mobile */
+
+        /* -------------------------
+           MOBILE
+        ------------------------- */
+
         @media (max-width: 700px) {
-            nav {
+
+            .navbar {
                 flex-direction: column;
                 gap: 15px;
             }
 
-            nav ul {
+            .nav-links {
                 gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .hero h1 {
@@ -142,66 +202,86 @@
             .hero p {
                 font-size: 17px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Sydney Schulz</h2>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- NAVIGATION IS INSERTED HERE BY nav.js -->
+
+    <div id="navigation"></div>
 
 
-    <!-- Home Section -->
+
+    <!-- HOME SECTION -->
+
     <section class="hero">
 
         <div class="hero-content">
 
-            <h1>Hi, I'm <span>Sydney Schulz</span>.</h1>
+            <h1>
+                Hi, I'm <span>Sydney Schulz</span>.
+            </h1>
 
             <p>
-                Welcome to my personal website! This site serves as a collection of
-                my personal and professional resources, experiences, projects, and
-                accomplishments. Here, you can learn more about me, explore my work,
-                and see the skills and experiences I continue to develop throughout
-                my academic and professional journey.
+                Welcome to my personal website! This site is a collection of my
+                personal and professional experiences, resources, accomplishments,
+                and interests. Here, you can learn more about who I am, explore my
+                previous work experience, view my resume, and get to know more about
+                my life outside of school and work. As I continue to gain new
+                experiences and develop professionally, I plan to use this website
+                as a place to showcase my growth, skills, and achievements.
             </p>
 
-            <a href="about.html" class="button">Learn More About Me</a>
+            <a href="about.html" class="button">
+                Learn More About Me
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- About Preview -->
+
+    <!-- ABOUT PREVIEW -->
+
     <section class="about">
 
         <h2>Welcome to My Website</h2>
 
         <p>
             I created this website as a place to showcase who I am both personally
-            and professionally. As I continue to gain new experiences, develop my
-            skills, and work on new projects, this website will serve as a growing
-            portfolio of my work and achievements.
+            and professionally. Use the navigation bar above to learn more about me,
+            explore my prior jobs and professional experiences, view my resume, or
+            learn more about my personal interests.
         </p>
 
     </section>
 
 
-    <!-- Footer -->
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>&copy; 2026 Sydney Schulz. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 Sydney Schulz. All Rights Reserved.
+        </p>
+
     </footer>
+
+
+
+    <!-- LOAD NAVIGATION JAVASCRIPT -->
+
+    <script src="nav.js"></script>
+
 
 </body>
 
