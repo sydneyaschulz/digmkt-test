@@ -1,5 +1,3 @@
-// Navigation bar used across the entire website
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const nav = document.getElementById("navigation");
@@ -20,5 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </nav>
     `;
-
 });
