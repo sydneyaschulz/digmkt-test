@@ -13,24 +13,28 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2efe9;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    /* Darker background outside website */
+    background-color: #c9b79c;
+
+    color: #4b4037;
+    line-height: 1.7;
 }
 
 
 /* =========================
    MAIN WEBSITE CONTAINER
-   80% website = 10% background
-   on each side
 ========================= */
 
 .site-container {
     width: 80%;
     margin: 0 auto;
-    background-color: white;
-    border: 2px solid #333;
+
+    /* Light sand instead of white */
+    background-color: #f4ead8;
+
+    border: 2px solid #6f5c4d;
 }
 
 
@@ -41,32 +45,45 @@ body {
 .header {
     display: grid;
     grid-template-columns: 220px 1fr;
-    border-bottom: 1px solid #333;
+
+    background-color: #ead9bd;
+
+    border-bottom: 1px solid #8b7765;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
-    border-right: 1px solid #333;
+
+    min-height: 110px;
+
+    border-right: 1px solid #8b7765;
+
     padding: 15px;
     text-align: center;
 }
 
 .logo h1 {
-    font-size: 27px;
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 29px;
+
+    color: #7b5d45;
+
+    letter-spacing: 1px;
 }
 
 .header-info {
     display: flex;
     align-items: center;
-    padding: 20px;
+
+    padding: 25px;
 }
 
 .header-info p {
     font-size: 16px;
+    color: #594a40;
 }
 
 
@@ -75,21 +92,31 @@ body {
 ========================= */
 
 .top-nav {
-    border-bottom: 1px solid #333;
-    padding: 12px;
+    border-bottom: 1px solid #8b7765;
+
+    padding: 14px;
+
     text-align: center;
-    background-color: #fafafa;
+
+    background-color: #dfccb0;
 }
 
 .top-nav a {
     text-decoration: none;
-    color: #333;
+
+    color: #554338;
+
     font-weight: bold;
+
     margin: 0 25px;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.2s;
 }
 
 .top-nav a:hover {
-    color: #8b6f5a;
+    color: #9a6f4f;
 }
 
 
@@ -112,12 +139,20 @@ body {
 ========================= */
 
 .left-sidebar {
-    border-right: 1px solid #333;
+    background-color: #ead9bd;
+
+    border-right: 1px solid #8b7765;
+
     padding: 30px 20px;
 }
 
 .left-sidebar h3 {
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #7b5d45;
+
+    font-size: 20px;
+
     margin-bottom: 20px;
 }
 
@@ -131,11 +166,14 @@ body {
 
 .left-sidebar a {
     text-decoration: none;
-    color: #333;
+
+    color: #665244;
+
+    font-weight: bold;
 }
 
 .left-sidebar a:hover {
-    color: #8b6f5a;
+    color: #a27655;
 }
 
 
@@ -144,8 +182,11 @@ body {
 ========================= */
 
 .main-content {
+    background-color: #f7efdf;
+
     padding: 25px;
-    border-right: 1px solid #333;
+
+    border-right: 1px solid #8b7765;
 }
 
 
@@ -156,9 +197,9 @@ body {
 .hero {
     min-height: 220px;
 
-    background-color: #ded6cd;
+    background-color: #dfccb0;
 
-    border: 1px solid #333;
+    border: 1px solid #9c8875;
 
     margin-bottom: 35px;
 
@@ -174,26 +215,35 @@ body {
 }
 
 .hero h2 {
-    font-size: 32px;
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+
+    color: #76543e;
+
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 17px;
+    font-size: 16px;
+
+    color: #695345;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
 }
 
 
 /* =========================
-   MAIN CONTENT SECTIONS
+   CONTENT SECTIONS
 ========================= */
 
 .content-section {
-    padding: 25px 0 40px;
-    border-bottom: 1px solid #ddd;
+    padding: 30px 0 40px;
 
-    /* Helps navigation links stop
-       at the correct location */
+    border-bottom: 1px solid #cdbca5;
+
     scroll-margin-top: 20px;
 }
 
@@ -202,18 +252,30 @@ body {
 }
 
 .content-section h2 {
-    font-size: 30px;
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 31px;
+
+    color: #7b5d45;
+
     margin-bottom: 20px;
 }
 
 .content-section h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #69503f;
+
     margin-top: 15px;
     margin-bottom: 8px;
 }
 
 .content-section p {
     margin-bottom: 18px;
+
+    color: #594a40;
+
+    font-size: 16px;
 }
 
 
@@ -222,14 +284,21 @@ body {
 ========================= */
 
 .job {
-    background-color: #f8f7f4;
+    background-color: #ead9bd;
+
     padding: 20px;
+
     margin: 15px 0;
-    border-radius: 6px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #a98262;
 }
 
 .job h3 {
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #795a43;
 }
 
 
@@ -238,14 +307,23 @@ body {
 ========================= */
 
 .fact {
-    background-color: #f8f7f4;
+    background-color: #ead9bd;
+
     padding: 20px;
+
     margin: 15px 0;
-    border-radius: 6px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #a98262;
 }
 
 .fact h3 {
-    color: #8b6f5a;
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #795a43;
+
+    font-size: 20px;
 }
 
 
@@ -259,15 +337,21 @@ body {
 }
 
 .skills li {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+
+    color: #594a40;
+
+    font-weight: 500;
 }
 
 
 /* =========================
-   RIGHT SIDEBAR
+   RIGHT SIDEBAR / QUICK FACTS
 ========================= */
 
 .right-sidebar {
+    background-color: #ead9bd;
+
     padding: 30px 20px;
 }
 
@@ -277,16 +361,57 @@ body {
 }
 
 .sticky-box h3 {
-    color: #8b6f5a;
-    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #7b5d45;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #a98262;
+
+    padding-bottom: 8px;
 }
 
+
+/* Fun Quick Facts list */
+
 .sticky-box ul {
-    padding-left: 20px;
+    list-style: none;
+
+    padding-left: 0;
 }
 
 .sticky-box li {
-    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    color: #675044;
+
+    background-color: #f7efdf;
+
+    margin-bottom: 12px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    border-left: 3px solid #a98262;
+}
+
+
+/* Add a little symbol before each quick fact */
+
+.sticky-box li::before {
+    content: "✦";
+
+    color: #a98262;
+
+    margin-right: 8px;
 }
 
 
@@ -295,15 +420,24 @@ body {
 ========================= */
 
 footer {
-    border-top: 1px solid #333;
+    border-top: 1px solid #8b7765;
+
     padding: 20px;
+
     text-align: center;
+
     font-size: 14px;
-    background-color: #fafafa;
+
+    background-color: #dfccb0;
+
+    color: #594a40;
 }
 
 footer a {
-    color: #8b6f5a;
+    color: #76543e;
+
+    font-weight: bold;
+
     text-decoration: none;
 }
 
@@ -318,17 +452,11 @@ footer a:hover {
 
 @media (max-width: 850px) {
 
-    /*
-       Still keeps 10% background
-       on each side
-    */
+    /* Keeps 10% background on each side */
 
     .site-container {
         width: 80%;
     }
-
-
-    /* Header becomes one column */
 
     .header {
         grid-template-columns: 1fr;
@@ -336,46 +464,34 @@ footer a:hover {
 
     .logo {
         border-right: none;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #8b7765;
     }
-
-
-    /* Main content becomes one column */
 
     .content-layout {
         grid-template-columns: 1fr;
     }
 
-
-    /* Remove side borders */
-
     .left-sidebar {
         border-right: none;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #8b7765;
     }
 
     .main-content {
         border-right: none;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #8b7765;
     }
-
-
-    /* Navigation fits smaller screens */
 
     .top-nav a {
         display: inline-block;
+
         margin: 5px 10px;
     }
 
-
-    /* Smaller heading */
-
     .hero h2 {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     .content-section h2 {
-        font-size: 26px;
+        font-size: 27px;
     }
-
 }
