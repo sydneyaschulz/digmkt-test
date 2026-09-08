@@ -2,286 +2,281 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sydney Schulz | Personal Website</title>
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8f7f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-
-        /* -------------------------
-           NAVIGATION
-        ------------------------- */
-
-        .navbar {
-            background-color: white;
-            padding: 20px 10%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
-            width: 100%;
-        }
-
-        .nav-name a {
-            font-size: 22px;
-            font-weight: bold;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            list-style: none;
-
-            display: flex;
-            flex-direction: row;
-
-            gap: 35px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-
-            font-size: 16px;
-            font-weight: 500;
-
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #8b6f5a;
-        }
-
-
-        /* -------------------------
-           HOME/HERO SECTION
-        ------------------------- */
-
-        .hero {
-            min-height: 75vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            text-align: center;
-
-            padding: 50px 20px;
-        }
-
-        .hero-content {
-            max-width: 750px;
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-            color: #2f2f2f;
-        }
-
-        .hero h1 span {
-            color: #8b6f5a;
-        }
-
-        .hero p {
-            font-size: 19px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-
-        /* -------------------------
-           BUTTON
-        ------------------------- */
-
-        .button {
-            display: inline-block;
-
-            background-color: #8b6f5a;
-            color: white;
-
-            padding: 13px 28px;
-
-            border-radius: 6px;
-
-            text-decoration: none;
-            font-weight: bold;
-
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background-color: #6f5747;
-        }
-
-
-        /* -------------------------
-           ABOUT PREVIEW
-        ------------------------- */
-
-        .about {
-            background-color: white;
-
-            padding: 70px 10%;
-
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            max-width: 750px;
-
-            margin: auto;
-
-            color: #666;
-
-            font-size: 17px;
-        }
-
-
-        /* -------------------------
-           FOOTER
-        ------------------------- */
-
-        footer {
-            text-align: center;
-
-            padding: 25px;
-
-            color: #777;
-
-            font-size: 14px;
-        }
-
-
-        /* -------------------------
-           MOBILE
-        ------------------------- */
-
-        @media (max-width: 700px) {
-
-            .navbar {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .nav-links {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-
-        }
-
-    </style>
-
+    <!-- Connects the style sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
+    <div class="site-container">
 
-    <!-- NAVIGATION IS INSERTED HERE BY nav.js -->
+        <!-- HEADER -->
+        <header class="header">
 
-    <div id="navigation"></div>
+            <div class="logo">
+                <h1>Sydney Schulz</h1>
+            </div>
+
+            <div class="header-info">
+                <p>
+                    Welcome to my personal website! This site includes information
+                    about me, my professional experiences, my resume, and personal facts.
+                </p>
+            </div>
+
+        </header>
 
 
+        <!-- JAVASCRIPT PUTS NAVIGATION HERE -->
+        <div id="navigation"></div>
 
-    <!-- HOME SECTION -->
 
-    <section class="hero">
+        <!-- THREE COLUMN AREA -->
+        <div class="content-layout">
 
-        <div class="hero-content">
 
-            <h1>
-                Hi, I'm <span>Sydney Schulz</span>.
-            </h1>
+            <!-- LEFT NAVIGATION -->
+            <aside class="left-sidebar">
 
-            <p>
-                Welcome to my personal website! This site is a collection of my
-                personal and professional experiences, resources, accomplishments,
-                and interests. Here, you can learn more about who I am, explore my
-                previous work experience, view my resume, and get to know more about
-                my life outside of school and work. As I continue to gain new
-                experiences and develop professionally, I plan to use this website
-                as a place to showcase my growth, skills, and achievements.
-            </p>
+                <h3>Explore My Website</h3>
 
-            <a href="about.html" class="button">
-                Learn More About Me
-            </a>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#jobs">Prior Jobs</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#personal">Personal</a></li>
+                </ul>
+
+            </aside>
+
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+
+
+                <!-- HERO -->
+                <section class="hero">
+
+                    <h2>Welcome to My Website</h2>
+
+                    <p>
+                        Personal • Professional • Academic
+                    </p>
+
+                </section>
+
+
+                <!-- ABOUT ME -->
+                <section id="about" class="content-section">
+
+                    <h2>About Me</h2>
+
+                    <p>
+                        My name is Sydney Schulz, and this is my personal website.
+                        I created this site as a place to share information about
+                        myself, my experiences, my skills, and my interests.
+                    </p>
+
+                    <p>
+                        I am interested in business, marketing, communication,
+                        social media, and creative projects. I enjoy learning new
+                        things and gaining experiences that help me grow personally
+                        and professionally.
+                    </p>
+
+                </section>
+
+
+                <!-- PRIOR JOBS -->
+                <section id="jobs" class="content-section">
+
+                    <h2>Prior Jobs</h2>
+
+                    <div class="job">
+
+                        <h3>Marketing Assistant</h3>
+
+                        <p>
+                            Assisted with social media content, promotional
+                            materials, marketing campaigns, and research.
+                        </p>
+
+                    </div>
+
+                    <div class="job">
+
+                        <h3>Retail Sales Associate</h3>
+
+                        <p>
+                            Helped customers, handled transactions, organized
+                            merchandise, and developed communication and
+                            customer service skills.
+                        </p>
+
+                    </div>
+
+                    <div class="job">
+
+                        <h3>Office Assistant</h3>
+
+                        <p>
+                            Helped organize documents, respond to emails,
+                            complete administrative tasks, and maintain schedules.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RESUME -->
+                <section id="resume" class="content-section">
+
+                    <h2>Resume</h2>
+
+                    <h3>Education</h3>
+
+                    <p>
+                        <strong>University Student</strong><br>
+                        Bachelor's Degree in Business<br>
+                        Expected Graduation: 2028
+                    </p>
+
+
+                    <h3>Experience</h3>
+
+                    <p>
+                        <strong>Marketing Assistant</strong><br>
+                        Assisted with social media, promotional materials,
+                        marketing campaigns, and market research.
+                    </p>
+
+                    <p>
+                        <strong>Retail Sales Associate</strong><br>
+                        Provided customer service, handled transactions,
+                        and helped maintain store organization.
+                    </p>
+
+
+                    <h3>Skills</h3>
+
+                    <ul class="skills">
+                        <li>Marketing</li>
+                        <li>Social Media</li>
+                        <li>Communication</li>
+                        <li>Customer Service</li>
+                        <li>Canva</li>
+                        <li>Microsoft Office</li>
+                        <li>Teamwork</li>
+                        <li>Organization</li>
+                    </ul>
+
+                </section>
+
+
+                <!-- PERSONAL -->
+                <section id="personal" class="content-section">
+
+                    <h2>Personal Facts About Me</h2>
+
+                    <p>
+                        Outside of my academic and professional experiences,
+                        here are a few facts about me!
+                    </p>
+
+                    <div class="fact">
+                        <h3>📍 Norwalk, Iowa</h3>
+
+                        <p>
+                            I am from Norwalk, Iowa, where I grew up and
+                            spent most of my life.
+                        </p>
+                    </div>
+
+
+                    <div class="fact">
+                        <h3>🐶 Two Dogs</h3>
+
+                        <p>
+                            I have two dogs that I love spending time with.
+                            They are a big part of my family.
+                        </p>
+                    </div>
+
+
+                    <div class="fact">
+                        <h3>✈️ Traveling</h3>
+
+                        <p>
+                            I enjoy traveling, exploring new places, and
+                            experiencing new activities.
+                        </p>
+                    </div>
+
+
+                    <div class="fact">
+                        <h3>👨‍👩‍👧‍👦 Friends & Family</h3>
+
+                        <p>
+                            I enjoy spending my free time with my friends
+                            and family.
+                        </p>
+                    </div>
+
+                </section>
+
+
+            </main>
+
+
+            <!-- RIGHT SIDE -->
+            <aside class="right-sidebar">
+
+                <div class="sticky-box">
+
+                    <h3>Quick Facts</h3>
+
+                    <ul>
+                        <li>From Norwalk, Iowa</li>
+                        <li>I have two dogs</li>
+                        <li>Interested in marketing</li>
+                        <li>Interested in business</li>
+                        <li>Enjoy traveling</li>
+                        <li>Enjoy creative projects</li>
+                    </ul>
+
+                </div>
+
+            </aside>
+
 
         </div>
 
-    </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                &copy; 2026 Sydney Schulz |
+                <a href="#about">About Me</a> |
+                <a href="#jobs">Prior Jobs</a> |
+                <a href="#resume">Resume</a> |
+                <a href="#personal">Personal</a>
+            </p>
+
+        </footer>
+
+    </div>
 
 
-
-    <!-- ABOUT PREVIEW -->
-
-    <section class="about">
-
-        <h2>Welcome to My Website</h2>
-
-        <p>
-            I created this website as a place to showcase who I am both personally
-            and professionally. Use the navigation bar above to learn more about me,
-            explore my prior jobs and professional experiences, view my resume, or
-            learn more about my personal interests.
-        </p>
-
-    </section>
-
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <p>
-            &copy; 2026 Sydney Schulz. All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-
-    <!-- LOAD NAVIGATION JAVASCRIPT -->
-
+    <!-- Connects JavaScript -->
     <script src="nav.js"></script>
-
 
 </body>
 
