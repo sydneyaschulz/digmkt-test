@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="nav-links">
 
-                <a href="index.html#about">About Me</a>
+                <a href="about.html">About Me</a>
 
-                <a href="index.html#jobs">Prior Jobs</a>
+                <a href="jobs.html">Prior Jobs</a>
 
-                <a href="index.html#resume">Resume</a>
+                <a href="resume.html">Resume</a>
 
-                <a href="index.html#personal">Personal</a>
+                <a href="personal.html">Personal</a>
 
                 <a href="products.html" class="products-link">Products</a>
 
