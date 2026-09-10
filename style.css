@@ -77,13 +77,41 @@ body {
 .header-info {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    padding: 25px;
+    padding: 25px 40px;
+
+    text-align: center;
 }
 
-.header-info p {
-    font-size: 16px;
-    color: #594a40;
+.welcome-text {
+    max-width: 600px;
+}
+
+.welcome-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: normal;
+
+    color: #76543e;
+
+    margin-bottom: 7px;
+
+    letter-spacing: 0.5px;
+}
+
+.welcome-text p {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #79685b;
+
+    letter-spacing: 1px;
+
+    font-style: italic;
 }
 
 
