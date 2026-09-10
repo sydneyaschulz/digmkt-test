@@ -473,7 +473,57 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* =========================
+   PRODUCT CARDS
+========================= */
 
+.product-card {
+    background-color: #ead9bd;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #a98262;
+}
+
+.product-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #795a43;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #594a40;
+
+    margin-bottom: 18px;
+}
+
+.product-button {
+    display: inline-block;
+
+    background-color: #a98262;
+
+    color: #f7efdf;
+
+    padding: 9px 16px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.product-button:hover {
+    background-color: #76543e;
+}
 /* =========================
    MOBILE / SMALL SCREENS
 ========================= */
