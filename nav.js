@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="personal.html">Personal</a>
 
                 <a href="products.html" class="products-link">Products</a>
+                
+                <a href="feedback.html">Feedback</a>
 
             </div>
 
